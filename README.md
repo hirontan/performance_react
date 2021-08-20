@@ -17,6 +17,12 @@ $ cd sample_api/
 $ django-admin startapp api
 ```
 
+### DBのマイグレーション
+```
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
 ### 起動
 ```
 $ python manage.py runserver 8080
