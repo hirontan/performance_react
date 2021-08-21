@@ -23,6 +23,10 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
+### スーパーユーザの作成
+```
+$ python manage.py createsuperuser
+```
 ### 起動
 ```
 $ python manage.py runserver 8080
