@@ -1,5 +1,5 @@
 from .models import Task, Tag
-from rest_framework import serializers, viewsets
+from rest_framework import viewsets
 from .serializers import TaskSerializer, TagSerializer
 
 
