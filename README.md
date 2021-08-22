@@ -31,3 +31,11 @@ $ python manage.py createsuperuser
 ```
 $ python manage.py runserver 8080
 ```
+
+## Reactの準備
+
+### 骨子作成
+```
+$ cd react-query
+$ npx create-react-app . --template redux-typescript
+```
