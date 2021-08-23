@@ -45,3 +45,8 @@ $ npx create-react-app . --template redux-typescript
 $ yarn add -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 $ yarn add @craco/craco
 ```
+
+### react-query axios react-router-dom heroicons のインストール
+```
+$ yarn add react-query react-query-devtools react-router-dom @types/react-router-dom axios @heroicons/react
+```
