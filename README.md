@@ -50,3 +50,8 @@ $ yarn add @craco/craco
 ```
 $ yarn add react-query react-query-devtools react-router-dom @types/react-router-dom axios @heroicons/react
 ```
+
+### 起動
+```
+$ yarn start
+```
