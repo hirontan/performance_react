@@ -1,8 +1,8 @@
 import { VFC } from "react";
 import { useClassicalFetch } from "../hooks/useClassicalFetch";
 import { useHistory } from "react-router";
-import { ChevronDoubleRightIcon } from "@heroicons/react"
-import { disconnect } from "process";
+import { ChevronDoubleRightIcon } from "@heroicons/react/solid";
+// import { disconnect } from "process";
 
 export const ClassicalFetchA: VFC = () => {
   const history =useHistory()
