@@ -4,7 +4,7 @@ import { useHistory } from "react-router";
 import { ChevronDoubleLeftIcon } from "@heroicons/react"
 import { useStateContext } from "../context/StateProvider";
 
-export const ClassicalFetchA: VFC = () => {
+export const ClassicalFetchB: VFC = () => {
   const history = useHistory()
   const { tasks } = useStateContext()
   console.log('rendered ClassicalFetchB')
