@@ -2,10 +2,9 @@ import { VFC } from "react";
 import { useClassicalFetch } from "../hooks/useClassicalFetch";
 import { useHistory } from "react-router";
 import { ChevronDoubleRightIcon } from "@heroicons/react/solid";
-// import { disconnect } from "process";
 
 export const ClassicalFetchA: VFC = () => {
-  const history =useHistory()
+  const history = useHistory()
   const { isLoading, isError, tasks } = useClassicalFetch()
   console.log('rendered ClassicalFetchA')
   return (

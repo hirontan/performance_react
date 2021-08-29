@@ -7,13 +7,16 @@ interface StateContextType {
   setTasks: React.Dispatch<React.SetStateAction<Task[] | null>>
   setDark: React.Dispatch<React.SetStateAction<boolean>>
 }
+
 const StateContext = createContext({} as StateContextType)
+
 export const StateProvider: React.FC = ({ children }) => {
   const [tasks, setTasks] = useState<Task[] | null>(null)
   const [dark, setDark] = useState(false)
   return (
-    <StateContext.Provider value={{ tasks, setTasks, dark, setDark }}>{ children }</StateContext.Provider>
-
+    <StateContext.Provider value={{ tasks, setTasks, dark, setDark }}>
+      {children}
+    </StateContext.Provider>
   )
 }
 export const useStateContext = (): StateContextType => useContext(StateContext)
