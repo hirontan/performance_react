@@ -7,20 +7,22 @@ import { StateProvider } from './context/StateProvider';
 import { Layout } from './components/Layout';
 
 const App: VFC = () => {
-  return <BrowserRouter>
-    <Layout>
+  return (
+    <BrowserRouter>
       <StateProvider>
-        <Switch>
-          <Route exact path="fetch-a">
-            <ClassicalFetchA />
-          </Route>
-          <Route exact path="fetch-b">
-            <ClassicalFetchB />
-          </Route>
-        </Switch>
+        <Layout>
+          <Switch>
+            <Route exact path="fetch-a">
+              <ClassicalFetchA />
+            </Route>
+            <Route exact path="fetch-b">
+              <ClassicalFetchB />
+            </Route>
+          </Switch>
+        </Layout>
       </StateProvider>
-    </Layout>
-  </BrowserRouter>
+    </BrowserRouter>
+  )
 
 }
 
