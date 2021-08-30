@@ -1,5 +1,4 @@
 import { VFC } from "react";
-// import { useClassicalFetch } from "../hooks/useClassicalFetch";
 import { useHistory } from "react-router";
 import { ChevronDoubleLeftIcon } from "@heroicons/react/solid"
 import { useStateContext } from "../context/StateProvider";
