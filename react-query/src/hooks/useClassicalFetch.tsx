@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useStateContext } from '../context/StateProvider'
-import axios  from 'axios'
+import axios from 'axios'
 
 export const useClassicalFetch = () => {
   const { tasks, setTasks } = useStateContext()
@@ -9,7 +9,7 @@ export const useClassicalFetch = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      setError(false);
+      setError(false)
       setLoading(true)
       try {
         const res = await axios('http://127.0.0.1:8080/api/tasks/')
@@ -17,9 +17,10 @@ export const useClassicalFetch = () => {
       } catch (error) {
         setError(true)
       }
+      setLoading(false)
     }
     fetchData()
-  },[setTasks])
+  }, [setTasks])
 
-  return {tasks, isLoading, isError}
+  return { tasks, isLoading, isError }
 }
