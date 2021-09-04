@@ -1,8 +1,8 @@
 import { VFC } from 'react'
 import { useHistory } from 'react-router-dom'
 import { ChevronDoubleLeftIcon } from '@heroicons/react/solid'
-// import { TagListMemo } from './TagList'
-// import { TagEditMemo } from './TagEdit'
+import { TagListMemo } from './TagList'
+import { TagEditMemo } from './TagEdit'
 
 export const MainTag: VFC = () => {
   const history = useHistory()
@@ -12,8 +12,8 @@ export const MainTag: VFC = () => {
       <p className="mb-10 text-xl font-bold">Tags</p>
 
       <div className="grid grid-cols-2 gap-40">
-        {/* <TagListMemo />
-        <TagEditMemo /> */}
+        <TagListMemo />
+        <TagEditMemo />
       </div>
 
       <ChevronDoubleLeftIcon
